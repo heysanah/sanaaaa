@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clean Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="sana3.jpg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Replace with your EmailJS Public Key
+    emailjs.init("hsCfzSL0l86wDyp3H"); 
+  </script>
+  <style>
+    body {
+      background-color: #eeeeee;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      animation: slideDown 1s ease-out;
+    }
+
+    .navbar-brand, .nav-link {
+      color: rgb(35, 25, 25) !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #ffd700 !important;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 250px;
+      height: auto;
+      border-radius: 0;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .portfolio-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-out;
+    }
+
+    .name {
+      font-size: 1.8rem;
+      font-weight: 500;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    
+
+    .role {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #444;
+      letter-spacing: 1px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      0% {opacity: 0; transform: translateY(-40px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+.icon-animate {
+  animation: pop 0.4s ease;
+}
+    /* Space below navbar */
+    .spacer {
+      height: 80px;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: rgb(227, 202, 206);
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      border-left: 4px solid #0d6efd;
+      padding-left: 15px;
+      animation: slideRight 1.2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .skill-item {
+      background-color: rgb(236, 139, 155);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideRight {
+      0% {opacity: 0; transform: translateX(-50px);}
+      100% {opacity: 1; transform: translateX(0);}
+    }
+
+    .navbar {
+      background-color: #000000e6;
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top px-4">
+  <a class="navbar-brand" href="#">SANA</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- To push content below fixed navbar -->
+<div class="spacer"></div>
+
+<!-- ✅ Hero Section -->
+<div class="hero" id="home">
+  <div class="portfolio-title"> MY PORTFOLIO</div>
+  <img src="sana3.jpg" alt="Your Photo">
+  <div class="name">SANA ANAS M</div>
+  <div class="role">PYTHON FULL STACK DEVELOPER | PROGRAMMER</div>
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body style="background-color: #d0caca; color: rgb(19, 17, 17);">
+<!-- icons-->
+  <div class="text-center mt-4">
+    <div class="social-icons mt-3">
+      <a href="https://www.instagram.com/sana.anas_?igsh=MWg1OGlzODZiZjZxbg==" target="_blank" rel="noopener noreferrer" class="me-3">
+        <i class="bi bi-instagram" style="font-size: 1.5rem; color: #181616;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sana-anas-2294a7274" target="_blank" rel="noopener noreferrer" class="me-3">
+        <i class="bi bi-linkedin" style="font-size: 1.5rem; color: #181515;"></i>
+      </a>
+      <a href="https://github.com/heysanah" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github" style="font-size: 1.5rem; color: rgb(18, 17, 17);"></i>
+      </a>
+    </div>
+  </div>
+<script>
+  document.querySelectorAll('.social-icons i').forEach(icon => {
+    icon.addEventListener('mouseenter', () => {
+      icon.classList.add('icon-animate');
+      // Remove the class after animation completes
+      setTimeout(() => {
+        icon.classList.remove('icon-animate');
+      }, 400);
+    });
+  });
+</script>
+<!-- Spacer -->
+<div style="height: 70px;"></div>
+
+<!-- ✅ About Section -->
+<section id="about" class="container">
+  <h2>About</h2>
+  <p><strong>I'm Sana Anas M</strong>, a passionate <strong>Python Full Stack Developer</strong> with a knack for creating intuitive and efficient web applications.</p>
+  <p>My experience spans across <strong>Python, Django, HTML, CSS, JavaScript, and React</strong> – building both frontend interfaces and backend systems.</p>
+  <p>I'm committed to writing clean code and building impactful solutions that scale.</p>
+  <p>Beyond coding, I value <strong>continuous learning, teamwork, and turning ideas into real products.</strong></p>
+</section>
+
+<!-- ✅ Skills Section -->
+<section id="skills" class="container">
+  <h2>Skills</h2>
+  <div class="skill-item"><span>HTML</span><span>75%</span></div>
+  <div class="skill-item"><span>CSS</span><span>60%</span></div>
+  <div class="skill-item"><span>JavaScript</span><span>30%</span></div>
+
+</section>
+
+
+
+  <section id="Education" class="container">
+    <h1>Education </h1>
+    <div class="timeline-box">
+      <div class="timeline-item left text-black"><h3>2020 - 2022</h3><p>HIGHTER SECONDARY velliyanchery school,COMPUTER SCIENCE</p></div>
+      <div class="timeline-item left text-black"><h3>2023 - 2023</h3><p>INMAKES INFOTECH kochi,PYTHON FULL STACK COURSE</p></div>
+      <div class="timeline-item left text-black"><h3>2022 - 2025</h3><p>MES KALLADI COLLEGE manarkkad,BSC COMPUTER SCIENCE</p></div>
+      <div class="timeline-item left text-black"><h3>2024 - 2024</h3><p>ICT ACADEMY-one month internship,FULL STACK DEVELOPMENT(MERN) </p></div>
+      
+    </div>
+  </section>
+<section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title text-black">Contact</h2>
+      <hr style="border-color: white;color: #181616; width: 100px; margin: 10px auto;" />
+
+      <form id="contact-form" class="mt-4" style="max-width: 500px; margin: auto;">
+        <div class="mb-3 text-start">
+          <label class="form-label text-black">Name</label>
+          <input type="text" name="user_name" class="form-control" placeholder="Your Name" required 
+                style="background-color: #f7f4f4; color: #0b0b0b; border: 1px solid rgb(7, 6, 6);">
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label text-black">Email</label>
+          <input type="email" name="user_email" class="form-control" placeholder="Your Email" required 
+                style="background-color: #f3f1f1; color: #050404; border: 1px solid rgb(11, 11, 11);">
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label text-black">Message</label>
+          <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required 
+                    style="background-color: #f7f5f5; color: #120f0f; border: 1px solid rgb(19, 15, 15);"></textarea>
+        </div>
+
+        <button type="submit" class="btn w-100" 
+                style="background-color: rgb(12, 10, 10); color: rgb(253, 245, 245); font-weight: bold;">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_cffxv8j", "template_80xlyxc", this)
+          .then(function () {
+            alert("Message sent successfully!");
+            document.getElementById("contact-form").reset();
+          }, function (error) {
+            console.log("FAILED...", error);
+            alert("Failed to send message. Please try again.");
+          });
+      });
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
